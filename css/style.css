@@ -150,9 +150,10 @@ address {
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
+  padding: 40px;
   width: 100%;
   max-width: 528px;
-  height: 500px;
+  height: auto;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -179,6 +180,168 @@ address {
   right: 8px;
   margin: 0;
   fill: var(--black-text-color);
+}
+
+.btn-close:hover .close-icon {
+  fill: var(--accent-color);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.field-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.field {
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.input-field {
+  margin: 0;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 42px;
+  padding-bottom: 0;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.input-field:hover {
+  border-color: var(--accent-color);
+}
+
+.input-field:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.input-wrap {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.field-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  fill: var(--title-text-color);
+}
+
+.field-title:hover .field-icon {
+  fill: var(--accent-color);
+}
+
+.input-field:focus .field-icon {
+  fill: var(--accent-color);
+}
+
+#user-name + .field-icon {
+  left: 15px;
+  width: 12px;
+  height: 12px;
+}
+
+#user-phone + .field-icon {
+  left: 14px;
+  width: 13px;
+  height: 13px;
+}
+
+#user-mail + .field-icon {
+  left: 13px;
+  width: 15px;
+  height: 13px;
+}
+
+.textarea {
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
+#comment {
+  margin: 0;
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+#comment::placeholder {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+#comment:hover {
+  border-color: var(--accent-color);
+}
+
+#comment:focus {
+  outline: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.agreement-link {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.modal-button {
+  display: inline-block;
+  font-family: inherit;
+  margin: 0 auto;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  border-style: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
 
 /* Стили шапки */
@@ -596,6 +759,7 @@ header .flex {
 .clients-list > li:not(:last-child) {
   margin-right: 30px;
 }
+
 /* Стили подвала */
 .footer {
   padding-top: 60px;
@@ -632,6 +796,7 @@ header .flex {
 .footer .social-list {
   display: inline-flex;
   align-items: baseline;
+  flex-wrap: nowrap;
   margin-top: 20px;
 }
 
@@ -646,7 +811,7 @@ header .flex {
 }
 
 .footer .social-list-wrap {
-  align-items: flex-end;
+  margin-right: 93px;
 }
 
 .footer-adress {
@@ -670,6 +835,61 @@ header .flex {
 .adress-item .adress-link {
   line-height: 1.714;
   color: var(--opacity-white-color);
+}
+.submit-container {
+  margin: 0;
+}
+.footer .submit-wrap {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  margin-top: 20px;
+}
+
+.submit {
+  display: flex;
+}
+
+.submit-mail {
+  margin: 0;
+  margin-right: 12px;
+  padding: 15px;
+  width: 358px;
+  height: 50px;
+  font-family: Roboto, sans-serif;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--dark-background-color);
+  color: var(--white-color);
+}
+
+.submit-mail::placeholder {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-submit {
+  display: inline-block;
+  padding-left: 29px;
+  padding-right: 28px;
+  min-width: 200px;
+}
+
+.btn-submit-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit-icon {
+  fill: currentColor;
+  margin-left: 10px;
 }
 
 /* Стили Портфолио */
