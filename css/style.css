@@ -825,9 +825,10 @@ header .flex {
   background-color: var(--dark-background-color);
 }
 
-.footer .container {
+.footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .footer .logo {
   margin-bottom: 20px;
@@ -873,7 +874,6 @@ header .flex {
 }
 
 .footer-adress {
-  align-items: baseline;
   margin-right: 70px;
 }
 
@@ -899,7 +899,7 @@ header .flex {
 }
 .footer .submit-wrap {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: baseline;
   flex-wrap: nowrap;
   margin-top: 20px;
