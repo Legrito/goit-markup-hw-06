@@ -593,7 +593,7 @@
           </svg>
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form action="#" class="form">
+        <form class="form">
           <div class="field">
             <label for="user-name" class="field-title">Имя</label>
             <div class="input-wrap">
@@ -625,11 +625,12 @@
             <label for="comment" class="field-title">Комментарий</label>
             <textarea id="comment" placeholder="Введите текст"></textarea>
           </div>
-          <div class="checkbox">
-            <input type="checkbox" id="sign" />
-            <label for="sign"
-              >Соглашаюсь с рассылкой и принимаю
-              <a href="" class="agreement-link">Условия договора</a>
+          <div class="checkbox-wrap">
+            <label for="sign" class="agreement-field">
+              <input type="checkbox" id="sign" class="checkbox" />
+              <span class="check-icon"></span>
+              Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a href="#" class="agreement-link">Условия договора</a>
             </label>
           </div>
           <button class="modal-button button">Отправить</button>
